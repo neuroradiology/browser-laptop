@@ -1,0 +1,19 @@
+{
+  "name": "brave-about",
+  "manifest_version": 2,
+  "version": "1.0",
+  "content_scripts": [{
+    "run_at": "document_start",
+    "matches": [
+      "http://localhost:*/about-preferences.html", "file://*/*/about-preferences.html",
+      "http://localhost:*/about-bookmarks.html", "file://*/*/about-bookmarks.html",
+      "http://localhost:*/about-downloads.html", "file://*/*/about-downloads.html",
+      "http://localhost:*/about-certerror.html", "file://*/*/about-certerror.html",
+      "http://localhost:*/about-passwords.html", "file://*/*/about-passwords.html"
+    ],
+    "js": [
+      "brave-about.js"
+    ]
+  }],
+  "incognito": "spanning"
+}

@@ -21,6 +21,7 @@ function config () {
             /node_modules/,
             /\.min.js$/,
             path.resolve(__dirname, 'app'),
+            path.resolve(__dirname, 'app', 'extensions'),
             path.resolve(__dirname, 'app', 'content', 'scripts')
           ],
           loader: 'babel'
